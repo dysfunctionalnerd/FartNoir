@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CharacterInteractionTrigger : MonoBehaviour
@@ -7,14 +5,16 @@ public class CharacterInteractionTrigger : MonoBehaviour
     [Header("Interaction Settings")]
     public Transform player;
     public Transform character;
-    public float interactionDistance = 1.5f;
+    public float interactionDistance = 3f;
+    public Vector3 playerTargetPosition;
 
-    //private DialogueManager dialogueManager;
+    private DialogueManager dialogueManager;
+    private bool isInteracting = false;
 
     private void Start()
     {
         // Find the DialogueManager in the scene
-        //dialogueManager = FindObjectOfType<DialogueManager>();
+        dialogueManager = FindObjectOfType<DialogueManager>();
     }
 
     private void Update()
@@ -24,12 +24,19 @@ public class CharacterInteractionTrigger : MonoBehaviour
             //Debug.Log(distance);
 
 
-        if (distance <= interactionDistance) // && !dialogueManager.IsInDialogue)
+        if (distance <= interactionDistance && Input.GetKeyDown(KeyCode.Space) && !isInteracting) // && !dialogueManager.IsInDialogue)
         {
-            //dialogueManager.StartDialogue();
-
-            Debug.Log("talk");
+            isInteracting = true;
+            MovePlayerToPosition();
+            Debug.Log("talk");    
         }
-    
+                         
+    }
+
+    private void MovePlayerToPosition()
+    {
+        player.position = playerTargetPosition;
+        dialogueManager.StartDialogue();
     }
 }
+
