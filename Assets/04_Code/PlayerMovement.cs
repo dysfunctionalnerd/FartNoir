@@ -23,8 +23,7 @@ public class Player : MonoBehaviour
     {
  // Capture input from the user
         movement.x = Input.GetAxisRaw("Horizontal"); // Left/Right movement
-        movement.y = Input.GetAxisRaw("Vertical");   // Up/Down movement
-
+        
         // Flip sprite based on horizontal movement direction
         if (movement.x != 0)
         {
