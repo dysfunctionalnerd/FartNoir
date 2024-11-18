@@ -41,9 +41,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8235114821959630056}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21d4bbd877bcfc54984f0dbf7f522e41, type: 3}
+  m_Script: {fileID: 11500000, guid: 56fb9900ce2c585479f40f56306ffec7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   character: {fileID: 0}
   interactionDistance: 3
+  playerTargetPosition: {x: 0, y: 0, z: 0}

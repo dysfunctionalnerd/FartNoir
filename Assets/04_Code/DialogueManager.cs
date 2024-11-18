@@ -1,5 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
+using Ink.Runtime;
+using Ink.UnityIntegration;
+
 
 public class DialogueManager : MonoBehaviour
 {
@@ -9,6 +12,10 @@ public class DialogueManager : MonoBehaviour
     public Transform npcSpeechAnchor;     // Anchor for NPC bubbles
     public Button choiceButton1;          // UI Button for choice 1
     public Button choiceButton2;          // UI Button for choice 2
+
+    [SerializeField]
+    InkFile testStory;
+
 
     private int currentLine = 0;
     private bool inDialogue = false;

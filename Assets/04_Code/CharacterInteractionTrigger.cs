@@ -36,7 +36,7 @@ public class CharacterInteractionTrigger : MonoBehaviour
     private void MovePlayerToPosition()
     {
         player.position = playerTargetPosition;
-        dialogueManager.StartDialogue();
+       // dialogueManager.StartDialogue();
     }
 }
 
