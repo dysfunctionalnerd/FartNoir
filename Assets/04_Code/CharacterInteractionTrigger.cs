@@ -6,7 +6,7 @@ public class CharacterInteractionTrigger : MonoBehaviour
     public Collider2D levelCollider;
 
    // private DialogueManager dialogueManager;
-    private bool isInteracting = false;
+    //private bool isInteracting = false;
 
     private void Start()
     {
