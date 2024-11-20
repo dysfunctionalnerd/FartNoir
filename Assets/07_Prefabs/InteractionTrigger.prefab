@@ -47,9 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   character: {fileID: 0}
-  interactionDistance: 3
-  playerTargetPosition: {x: 0, y: 0, z: 0}
-  collider: {fileID: 7630584087774741348}
+  interactionRadius: 1.5
 --- !u!70 &7630584087774741348
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

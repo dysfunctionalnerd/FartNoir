@@ -10,12 +10,23 @@ public class Player : MonoBehaviour
     private Rigidbody2D rigid;
     private Vector2 movement;
     private SpriteRenderer spriteRenderer;
+
+    [SerializeField]
+    DialogueManager dialogueManager;
+
+    string npcInRadius;
+
+    [SerializeField]
+    LayerMask npcLayer;
+
+    public bool inDialogue;
+
     // Start is called before the first frame update
     void Start()
     {
-         // Get the Rigidbody2D component for physics-based movement
+         // Get the Rigidbody2D composnent for physics-based movement
         rigid = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();       
     }
 
     // Update is called once per frame
@@ -29,6 +40,17 @@ public class Player : MonoBehaviour
         {
             spriteRenderer.flipX = movement.x < 0;
         }
+
+        if (!inDialogue)
+        {
+            rigid.velocity = new Vector2(movement.x, rigid.velocity.y);
+        }
+
+       /* if (Input.GetKeyDown(KeyCode.Space) && CloseToNPC() && !inDialogue)
+        {
+           // dialogueManager.InitializeDialogue(npcInRadius);
+            inDialogue = true;
+        }*/
     }
 
     void FixedUpdate()
@@ -36,4 +58,15 @@ public class Player : MonoBehaviour
         // Apply movement to the Rigidbody for a smooth experience
         rigid.MovePosition(rigid.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
+
+   /* bool CloseToNPC()
+    {
+       // Collider2D hit = Physiscs2D.OverlapCircle(this.transform.position, interactionRadius, npcLayer);
+        if (hit != null)
+        {
+            npcInRadius = hit.name;
+            return true;
+        }
+        return false;
+    }*/
 }
