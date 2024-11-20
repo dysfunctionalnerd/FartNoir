@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638676585916533921
-    m_Hash: 655534375
+      ticks: 638677014685725740
+    m_Hash: 1038094938
   m_LockFileStatus:
     m_FilePath: C:/Users/Funke/UnityProjects/FartNoir/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638676585916653603
-    m_Hash: 2348778575
+      ticks: 638677015341244309
+    m_Hash: 2620618384
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -3025,6 +3025,64 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 1.0.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
+- packageId: com.inkle.ink-unity-integration@https://github.com/inkle/ink-unity-integration.git#upm
+  testable: 0
+  isDirectDependency: 1
+  version: 1.2.1
+  source: 5
+  resolvedPath: C:\Users\Funke\UnityProjects\FartNoir\Library\PackageCache\com.inkle.ink-unity-integration@2b6b4fc41b
+  assetPath: Packages/com.inkle.ink-unity-integration
+  name: com.inkle.ink-unity-integration
+  displayName: Ink
+  author:
+    name: Inkle
+    email: info@inklestudios.com
+    url: https://www.inklestudios.com/
+  category: 
+  type: 
+  description: Unity integration for the open source ink narrative scripting language.
+  status: 0
+  errors: []
+  versions:
+    all: []
+    compatible: []
+    recommended: 
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - ink
+  - inky
+  - inkle
+  - story
+  - narrative
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
