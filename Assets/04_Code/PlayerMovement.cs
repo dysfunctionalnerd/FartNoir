@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     private Vector2 movement;
     private SpriteRenderer spriteRenderer;
 
-    string npcInRadius;
+    string npcInRadius; 
 
     [SerializeField]
     LayerMask npcLayer;
