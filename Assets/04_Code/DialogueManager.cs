@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class DialogueManager : MonoBehaviour
 {
+
+    public bool IsInDialogue {  get; private set; }
     // Start is called before the first frame update
-    void Start()
+    public void StartDialogue()
     {
-        
+        IsInDialogue = true;
+        Debug.Log("Dialogue started.");
+        // Add logic to display dialogue UI or trigger dialogue events here
     }
 
-    // Update is called once per frame
-    void Update()
+    public void EndDialogue()
     {
-        
+        IsInDialogue = false;
+        Debug.Log("Dialogue ended.");
+        // Add logic to hide dialogue UI or complete dialogue events here
     }
 }

@@ -11,9 +11,6 @@ public class Player : MonoBehaviour
     private Vector2 movement;
     private SpriteRenderer spriteRenderer;
 
-    [SerializeField]
-    DialogueManager dialogueManager;
-
     string npcInRadius;
 
     [SerializeField]
@@ -21,7 +18,7 @@ public class Player : MonoBehaviour
 
     public bool inDialogue;
 
-    // Start is called before the first frame update
+    // Start is called before the first frame updates
     void Start()
     {
          // Get the Rigidbody2D composnent for physics-based movement
