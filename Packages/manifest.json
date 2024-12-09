@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.inkle.ink-unity-integration": "file:C:/Users/1243753/Documents/Unity/ink-unity-integration-master/ink-unity-integration-master/Packages/Ink",
     "com.unity.collab-proxy": "2.5.2",
     "com.unity.feature.2d": "2.0.1",
     "com.unity.ide.rider": "3.0.34",
@@ -39,7 +40,6 @@
     "com.unity.modules.video": "1.0.0",
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
-    "com.unity.modules.xr": "1.0.0",
-    "com.inkle.ink-unity-integration": "https://github.com/inkle/ink-unity-integration.git#upm"
+    "com.unity.modules.xr": "1.0.0"
   }
 }
